@@ -7,27 +7,29 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <form action="" method="post" class="Form">
+    <form action="" method="post" class="Form" id="form">
         <p class="FormTitle">Cadastrar</p>
         <main class="Inputs">
             <label class="label" for="label">Nome</label> <span class="Span">*</span>
             <label class="label Sobrenome" for="label">Sobrenome</label> <span class="Span">*</span>    
             <br> 
-            <input type="text" class="FormInput Nome" required > 
-            <input type="text" class="FormInput Nome" required ><br>
+            <input type="text" class="FormInput Nome" required id="Nome"> 
+            <input type="text" class="FormInput Nome" required id="Sobrenome"><br>
             <label class="label" for="label">Cargo</label> <span class="Span">*</span> <br>   
-            <input type="text" class="FormInput" required > <br>
+            <input type="text" class="FormInput" required id="Cargo"> <br>
             <label class="label" for="label">Senha</label> <span class="Span">*</span> <br>
-            <input type="password" class="FormInput" required > 
+            <input type="password" class="FormInput" required id="Senha"> 
             <label class="label" for="label">Salario</label> <span class="Span">*</span> <br>
-            <input type="number" class="FormInput" required > 
+            <input type="number" class="FormInput" required id="Salario"> 
             <label class="label" for="label">Data Nascimento</label> <span class="Span">*</span> <br>
-        <input type="date" class="FormInput data" required > <br>
+        <input type="date" class="FormInput data" required id="Data"> <br>
         </main>
         <div class="btns">
-            <input type="button" class="btn" value="Cancelar">
+            <input type="button" class="btn" value="Cancelar" onclick="Limpar()">
             <input type="submit" class="btn" value="Entrar">
         </div>
+        <span class="Invalidacao" id="span">Data Invalida!!!!</span>
     </form>
+    <script src="scriptFuncionario.js"></script>
 </body>
 </html>
