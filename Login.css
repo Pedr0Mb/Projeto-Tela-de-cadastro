@@ -1,5 +1,5 @@
 body{
-    font-family: cursive;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,6 +22,9 @@ body{
     text-align: center;
     font-size: 30pt;
     margin-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(37, 93, 247);
+    font-weight: 500;
 }
 .Inputs{
     margin-left: 20px;
@@ -34,16 +37,17 @@ body{
     margin-bottom: 35px;
     width: 460px;
     font-size: 12pt;
-    font-family: cursive;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     margin-top: 5px;
+}
+.FormInput:focus{
+    box-shadow: 0px 0px 5px rgb(37, 93, 247);
 }
 .Nome{
     width: 200px;    
 }
 .data{
     width: 160px;
-}
-.Span{
-    color: deeppink;
 }
 .Sobrenome{
     margin-left: 170px;
@@ -57,16 +61,16 @@ body{
 }
 .btn{
     color: white;
-    background-color: deeppink;
+    background-color: rgb(37, 93, 247);
     border: none;
     width: 110px;
     height: 40px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15pt;
     border-radius: 5%;
     cursor: pointer;
 }
 .btn:hover{
-    background-color: rgb(255, 81, 174);
+    background-color: rgb(80, 121, 235);
 }
 

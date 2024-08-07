@@ -10,6 +10,7 @@ ds_cargo varchar(30) not null,
 nr_salario decimal not null,
 dt_admissao date not null,
 nm_senha text not null
+nm_login varchar(45) not null
 );
 
 create table tb_cliente(
