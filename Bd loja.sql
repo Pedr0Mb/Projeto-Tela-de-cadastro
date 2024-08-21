@@ -30,3 +30,31 @@ nm_email varchar(50) not null,
 nr_telefone varchar(11) not null,
 nm_endereco varchar(50) not null
 );
+
+create table tb_categoria{
+    id_categoria int primary key auto_increment,
+    nome varchar(20) not null,
+    descricao varchar(100) not null,
+}
+
+create table tb_Lancamento_Despesas{
+    id_despesa  int primary auto_increment,
+    descricao varchar(100) not null,
+    valor decimal(9,2) not null,
+    data_lancamento date not null,
+    id_categoria int ,
+    id_funcionario int,
+    foreign key (id_categoria) references tb_categoria (id_categoria)
+    foreign key (id_funcionario) references tb_funcionario (id_funcionario)
+}
+
+create table tb_Lancamento_receita{
+    id_receita  int primary auto_increment,
+    descricao varchar(100) not null,
+    valor decimal(9,2) not null,
+    data_lancamento date not null,
+    id_categoria int ,
+    id_funcionario int,
+    foreign key (id_categoria) references tb_categoria (id_categoria)
+    foreign key (id_funcionario) references tb_funcionario (id_funcionario)
+}
