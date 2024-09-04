@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/LoginFuncionario.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <form action="/php/insertFuncionario.php" method="post" class="Form" id="form">
+        <p class="FormTitle">Cadastrar</p>
+        <main class="Inputs">
+            <label class="label" for="label">Nome</label> 
+            <label class="label Sobrenome" for="label">sobrenome</label>     
+            <br> 
+            <input name="nome" type="text" class="FormInput Nome" required id="Nome"> 
+            <input name="sobrenome" type="text" class="FormInput Nome" required id="Sobrenome"><br>
+            <label class="label" for="label">Cargo</label>  <br>   
+            <input name="cargo" type="text" class="FormInput" required id="Cargo"> <br>
+            <label class="label" for="label">Senha</label>  <br>
+            <input name="senha" type="password" class="FormInput" required id="Senha"> 
+            <label class="label" for="label">Salario</label>  <br>
+            <input name="salario" type="number" min="0" class="FormInput" required id="Salario"> 
+            <label class="label" for="label">Data Nascimento</label>  <br>
+            <input type="admissao" class="FormInput data" required id="Data">
+            <label class="label" for="label">Login</label>  <br>
+            <input name="login" type="email" class="FormInput" required id="Senha"> 
+            <label class="label" for="label">Data Nascimento</label>  <br>
+            <input name="data" type="date" class="FormInput data" required id="Data"> <br>
+        </main>
+        <div class="btns">
+            <input type="button" class="btn" value="Cancelar" onclick="Limpar()">
+            <input type="submit" class="btn" value="Entrar">
+        </div>
+        <span class="Invalidacao" id="span">Data Invalida!!!!</span>
+    </form>
+    <script src="js/scriptFuncionario.js"></script>
+</body>
+</html>
