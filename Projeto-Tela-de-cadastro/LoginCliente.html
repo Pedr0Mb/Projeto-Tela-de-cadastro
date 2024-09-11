@@ -13,14 +13,14 @@
             <label class="label" for="label">Nome</label> 
             <label class="label Sobrenome" for="label">Sobrenome</label>     
             <br> 
-            <input type="text" class="FormInput Nome" required id="Nome"> 
-            <input type="text" class="FormInput Nome" required id="Sobrenome"><br>
+            <input name="nome" type="text" class="FormInput Nome" required id="Nome"> 
+            <input name="sobrenome" type="text" class="FormInput Nome" required id="Sobrenome"><br>
             <label class="label" for="label">E-mail</label>  <br>   
-            <input type="text" class="FormInput" required id="Email"> <br>
+            <input name="email" type="text" class="FormInput" required id="Email"> <br>
             <label class="label" for="label">Telefone</label>  <br>
-            <input type="tel" min="0" class="FormInput" required id="Telefone" placeholder="00-00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"> 
+            <input name="telefone" type="tel" min="0" class="FormInput" required id="Telefone" placeholder="00-00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"> 
             <label class="label" for="label">Endereço</label>  <br>
-            <input type="text" class="FormInput" required id="Endereco"> 
+            <input name="endereco" type="text" class="FormInput" required id="Endereco"> 
         </main>
         <div class="btns">
             <input type="button" class="btn" value="Cancelar" onclick="Limpar()">
