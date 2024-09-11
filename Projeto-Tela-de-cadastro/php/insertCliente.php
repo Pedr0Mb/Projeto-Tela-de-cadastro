@@ -9,7 +9,7 @@ $endereco = $_Post['endereco'];
 
 require_once 'conection.php'; 
 
-$insert_fornecedor = 'INSERT INTO tb_cliente VALUES(NULL, '$Nnome', '$sobrenome', '$email', '$telefone', '$endereco')';
+$insert_fornecedor = 'INSERT INTO tb_cliente VALUES(NULL, '$nome', '$sobrenome', '$email', '$telefone', '$endereco')';
 
 $resultado = $conection->query($insert_fornecedor);
 
