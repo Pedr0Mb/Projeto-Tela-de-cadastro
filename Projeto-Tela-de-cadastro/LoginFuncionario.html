@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="css/LoginFuncionario.css">
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <form action="/php/insertFuncionario.php" method="post" class="Form" id="form">
+    <form action="php/insertFuncionario.php" method="post" class="Form" id="form">
         <p class="FormTitle">Cadastrar</p>
         <main class="Inputs">
             <label class="label" for="label">Nome</label> 
@@ -21,10 +21,10 @@
             <input name="senha" type="password" class="FormInput" required id="Senha"> 
             <label class="label" for="label">Salario</label>  <br>
             <input name="salario" type="number" min="0" class="FormInput" required id="Salario"> 
-            <label class="label" for="label">Data Nascimento</label>  <br>
-            <input type="admissao" class="FormInput data" required id="Data">
+            <label class="label" for="label">Data Admissao</label>  <br>
+            <input type="date" name="admissao" class="FormInput data" required id="DateAd"> <br>
             <label class="label" for="label">Login</label>  <br>
-            <input name="login" type="email" class="FormInput" required id="Senha"> 
+            <input name="login" type="email" class="FormInput" required id="login">  <br>
             <label class="label" for="label">Data Nascimento</label>  <br>
             <input name="data" type="date" class="FormInput data" required id="Data"> <br>
         </main>

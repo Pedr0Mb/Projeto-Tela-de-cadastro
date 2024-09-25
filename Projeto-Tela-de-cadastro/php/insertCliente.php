@@ -1,19 +1,18 @@
-<?php
+<?php 
 
+$nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$endereco = $_POST['endereco'];
 
-$nome = $_Post['nome'];
-$sobrenome = $_Post['sobrenome'];
-$email = $_Post['email'];
-$telefone = $_Post['telefone'];
-$endereco = $_Post['endereco'];
+include 'conection.php';
 
-require_once 'conection.php'; 
+$insertCliente = "INSERT INTO tb_cliente VALUES (NULL, '$nome', '$sobrenome', '$email', '$telefone', '$endereco')";
 
-$insert_fornecedor = 'INSERT INTO tb_cliente VALUES(NULL, '$nome', '$sobrenome', '$email', '$telefone', '$endereco')';
-
-$resultado = $conection->query($insert_fornecedor);
+$resultado = $conection->query($insertCliente);
 
 if($resultado) {
-    header('Location: ../loginCliente.html')
+    echo"<script>alert('inserido com sucesso'); history.back() </script>";
 }
 ?>

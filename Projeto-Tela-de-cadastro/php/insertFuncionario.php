@@ -1,22 +1,21 @@
 <?php
 
+$nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
+$data = $_POST['data'];
+$cargo = $_POST['cargo'];
+$salario = $_POST['salario'];
+$admissao = $_POST['admissao'];
+$senha = $_POST['senha'];
+$login = $_POST['login'];
 
-$nome = $_Post['nome'];
-$sebrenome = $_Post['sebrenome'];
-$data = $_Post['data'];
-$cargo = $_Post['cargo'];
-$salario = $_Post['salario'];
-$admissao = $_Post['admissao'];
-$senha = $_Post['senha'];
-$login = $_Post['login'];
+include 'conection.php';
 
-require_once 'conection.php'; 
+$insertFuncionario = "INSERT INTO tb_funcionario VALUES (NULL, '$nome', '$sobrenome', '$data', '$cargo', '$salario','$admissao','$senha','$login')";
 
-$insert_fornecedor = 'INSERT INTO tb_fornecedor VALUES(NULL, '$Nnome', '$sobrenome', '$data', '$cargo', '$salario','$admissao','$senha','$login')';
-
-$resultado = $conection->query($insert_fornecedor);
+$resultado = $conection->query($insertFuncionario);
 
 if($resultado) {
-    header('Location: ../loginFuncionario.html')
+    echo"<script>alert('inserido com sucesso'); history.back()</script>";
 }
 ?>
