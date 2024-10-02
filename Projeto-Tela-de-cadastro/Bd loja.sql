@@ -34,7 +34,7 @@ nm_endereco varchar(50) not null
 create table tb_categoria(
     id_categoria int primary key auto_increment,
     nome varchar(20) not null,
-    descricao varchar(100) not null,
+    descricao varchar(100) not null
 );
 
 create table tb_Lancamento_Despesas(
