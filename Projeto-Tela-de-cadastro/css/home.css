@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(235, 233, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(37, 93, 247);
+    font-weight: 500;
+    font-size: 50pt;
+}
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 285px 285px;
+}
+
+.btn{
+    height: 260px;
+    width: 260px;
+    border: 2px solid rgb(37, 93, 247);
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(37, 93, 247);
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover{
+    color: rgb(235, 233, 233);
+   background-color: rgb(37, 93, 247);
+}
+.dsBtn{
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.bi{
+    font-size: 80pt;
+}
+
+.btnSair{
+    color: rgb(37, 93, 247);
+    text-decoration: none;
+    font-size: 18pt;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+

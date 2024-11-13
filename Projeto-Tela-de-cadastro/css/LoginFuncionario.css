@@ -73,6 +73,7 @@ body{
     font-size: 15pt;
     border-radius: 5%;
     cursor: pointer;
+    margin-top: 15px;
 }
 .btn:hover{
     background-color: rgb(80, 121, 235);
@@ -84,3 +85,8 @@ body{
     display: none;
 }
 
+.conta{
+    color: rgb(37, 93, 247);
+    text-decoration: none;
+
+}

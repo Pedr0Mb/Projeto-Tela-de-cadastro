@@ -17,5 +17,6 @@ $resultado = $conection->query($insertFuncionario);
 
 if($resultado) {
     echo"<script>alert('inserido com sucesso'); history.back()</script>";
+    header('location: ../login.html');
 }
 ?>

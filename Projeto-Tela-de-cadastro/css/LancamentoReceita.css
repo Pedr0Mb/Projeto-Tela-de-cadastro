@@ -58,7 +58,6 @@ body{
 .label{
     font-size: 15pt;
     margin-left: 40px;
-    
 }
 
 .btns{
@@ -69,7 +68,7 @@ body{
     margin-top: 50px;
 }
 .btn{
-    color: white;
+    color: rgb(141, 39, 39);
     background-color: rgb(37, 93, 247);
     border: none;
     width: 110px;
@@ -78,6 +77,10 @@ body{
     font-size: 15pt;
     border-radius: 5%;
     cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .btn:hover{
     background-color: rgb(80, 121, 235);

@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <form action="" method="post" class="Form">
+    <form action="php/logon.php" method="post" class="Form">
         <p class="FormTitle">Login</p>
         <main class="Inputs">
-            <label class="label" for="label">Login</label> 
+            <label class="label" for="label">Id</label> 
             <br> 
-            <input type="text" class="FormInput " required id="Nome"> 
+            <input name="login" type="text" class="FormInput " required id="Nome"> 
             <br>
             
             <label class="label" for="label">Senha</label>  <br>
-            <input type="password" class="FormInput" required id="Senha"> 
-           
+            <input name="senha" type="password" class="FormInput" required id="Senha"> 
+            <a href="LoginFuncionario.html" class="criarConta">Criar uma conta</a>
         </main>
         <div class="btns">
             <input type="button" class="btn" value="Cancelar" onclick="Limpar()">
